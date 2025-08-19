@@ -152,4 +152,4 @@
 </p>
 
 ## JOIN TO CHANNEL
-<a href="whatsapp link"><img title="OUR-WHATSAPP CHANNEL" src="https://img.shields.io/badge/OUR-WHATSAPP CHANNEL-h?color=green&style=for-the-badge&logo=whatsapp" width="280" height="38.45"/></a>
+<a href="https://whatsapp.com/channel/0029Vb4q0dBF1YlYwsYt9N0l"><img title="OUR-WHATSAPP CHANNEL" src="https://img.shields.io/badge/OUR-WHATSAPP CHANNEL-h?color=green&style=for-the-badge&logo=whatsapp" width="280" height="38.45"/></a>
