@@ -127,16 +127,7 @@
   <a href="https://t.me/arizakmd" target="_blank">
     <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
   </a>
-</p>
 
----
-
-<h2 align="left">⚠️ Reminder</h2>
-<p align="center">
-- **Disclaimer:** This bot is not affiliated with `WhatsApp Inc.`. Use it at your own risk.  
-- Misusing the bot may result in your `WhatsApp` account being banned.  
-- I am not responsible for bans or misuse.  
-</p>
 
 ---
 
@@ -146,7 +137,7 @@
 </p>
 
 <p align="center">
-    <a href="https://https://chat.whatsapp.com/B7XDnIY5Kl24IghC7SdlGS?mode=ac_t">
+    <a href="https://chat.whatsapp.com/B7XDnIY5Kl24IghC7SdlGS?mode=ac_t">
         <img height="30" title="JOIN TO GROUP" src="https://img.shields.io/badge/Support%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white">
     </a>
 </p>
