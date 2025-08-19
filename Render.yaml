@@ -1,4 +1,13 @@
-services:
+
+# Make sure your repo is up to date
+git checkout main
+git pull origin main
+
+# Create new branch
+git checkout -b render-deploy
+
+# Create render.yaml file
+echo "services:
   - type: web
     name: arizak-md
     env: node
@@ -13,17 +22,18 @@ services:
       - key: PORT
         value: 10000
       - key: SESSION_ID
-        sync: false   # keep secret, will set in Render dashboard
+        sync: false
       - key: DATABASE_URL
-        sync: false   # optional if you use database
+        sync: false
       - key: API_KEY
-        sync: false   # example for extra configs
+        sync: false
+" > render.yaml
 
-# Optional background worker (if needed)
-#  - type: worker
-#    name: arizak-md-worker
-#    env: node
-#    buildCommand: |
-#      npm install
-#    startCommand: |
-#      node worker.js
+# Add the file to Git
+git add render.yaml
+
+# Commit changes
+git commit -m "Added render.yaml for deployment"
+
+# Push branch to GitHub
+git push origin render-deploy
