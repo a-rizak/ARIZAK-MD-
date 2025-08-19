@@ -146,7 +146,7 @@
 </p>
 
 <p align="center">
-    <a href="https://chat.whatsapp.com/BKoqNbYGCkK5apBNP0nzI3">
+    <a href="https://https://chat.whatsapp.com/B7XDnIY5Kl24IghC7SdlGS?mode=ac_t">
         <img height="30" title="JOIN TO GROUP" src="https://img.shields.io/badge/Support%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white">
     </a>
 </p>
