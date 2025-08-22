@@ -24,7 +24,7 @@ async function startBot() {
 
   // 🔑 Generate Pairing Code if not registered
   if (!sock.authState.creds.registered) {
-    const phoneNumber = "254712345678"; // <-- CHANGE THIS TO YOUR NUMBER
+    const phoneNumber = "254727740389"; // <-- CHANGE THIS TO YOUR NUMBER
     const code = await sock.requestPairingCode(phoneNumber);
     console.log("🔑 Your Pairing Code:", code);
   }
