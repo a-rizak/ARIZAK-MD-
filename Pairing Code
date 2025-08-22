@@ -1,0 +1,42 @@
+// ARIZAK-MD WhatsApp Bot - Pairing Code Version
+// By Rizak (Modified for pairing instead of QR)
+
+const {
+  default: makeWASocket,
+  useMultiFileAuthState,
+  fetchLatestBaileysVersion
+} = require("@whiskeysockets/baileys");
+
+async function startBot() {
+  // Load/save session
+  const { state, saveCreds } = await useMultiFileAuthState('./session');
+
+  // Fetch latest WhatsApp Web version
+  const { version, isLatest } = await fetchLatestBaileysVersion();
+  console.log(`✅ Using WA version: ${version}, Latest: ${isLatest}`);
+
+  // Create socket (disable QR printing)
+  const sock = makeWASocket({
+    version,
+    auth: state,
+    printQRInTerminal: false, // 🚫 No QR
+  });
+
+  // 🔑 Generate Pairing Code if not registered
+  if (!sock.authState.creds.registered) {
+    const phoneNumber = "254712345678"; // <-- CHANGE THIS TO YOUR NUMBER
+    const code = await sock.requestPairingCode(phoneNumber);
+    console.log("🔑 Your Pairing Code:", code);
+  }
+
+  // Save session automatically
+  sock.ev.on('creds.update', saveCreds);
+
+  // Listen for messages
+  sock.ev.on("messages.upsert", async (msg) => {
+    console.log("📩 New message:", msg);
+    // You can add your bot's response logic here
+  });
+}
+
+startBot();
